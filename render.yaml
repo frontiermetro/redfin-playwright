@@ -3,5 +3,5 @@ services:
     name: redfin-playwright
     env: python
     plan: free
-    buildCommand: ./postbuild.sh
+    buildCommand: chmod +x postbuild.sh && ./postbuild.sh
     startCommand: uvicorn main:app --host 0.0.0.0 --port 8080
